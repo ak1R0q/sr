@@ -28,7 +28,7 @@ namespace sr
                 else { break; }
 
             }
-            Console.WriteLine($"За {GameTime} минут будет заработано {res}");
+            Console.WriteLine($"За {GameTime} минут будет произведено {res} баобабов");
         }
 
     }

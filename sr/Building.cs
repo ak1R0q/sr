@@ -27,7 +27,7 @@ namespace sr
         }
         public void DisplayInfo()
         {
-            Console.WriteLine($"«Название: {name}, Стоимость: {buildCost}, Производство: {production} в минуту»");
+            Console.WriteLine($"«Название: {name}, Стоимость: {buildCost}, Производство: {production} баобабов в минуту»");
         }
         
     }

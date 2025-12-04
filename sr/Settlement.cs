@@ -9,7 +9,7 @@ namespace sr
 {
     internal class Settlement
     {
-        private Building[] buildings = new Building[5];
+        private Building[] buildings = new Building[2];
         private int budget;
 
         public int Budget
@@ -28,7 +28,7 @@ namespace sr
             for (int i = 0; i < buildings.Length; i++)
             {
                 if ((buildings[i] == null) & (budget - building.BuildCost >= 0)) { buildings[i] = building; budget -= building.BuildCost; return; }
-                if (i == buildings.Length) { Console.WriteLine("oshibka"); return; }
+                if (i == buildings.Length - 1) { Console.WriteLine("недостаточно средств или нет свободных слотов"); return; }
             }
         }
         public void GetTotalProduction()
